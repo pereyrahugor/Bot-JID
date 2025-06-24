@@ -1,7 +1,6 @@
 import { addKeyword, EVENTS } from "@builderbot/bot";
 import { BaileysProvider } from "@builderbot/provider-baileys";
 import { MemoryDB } from "@builderbot/bot";
-import { reset } from "~/utils/timeOut";
 import { handleQueue, userQueues, userLocks } from "~/app";
 const setTime = 7 * 60 * 1000 // tiempo de espera antes de finalizar el chat - en millisegundos (minutos*60*1000)
 
@@ -10,8 +9,6 @@ export const welcomeFlowTxt = addKeyword<BaileysProvider, MemoryDB>(EVENTS.WELCO
         const userId = ctx.from;
 
         console.log(`📩 Mensaje recibido de :${userId}`);
-
-        reset(ctx, gotoFlow, setTime);
 
         // Asegurar que userQueues tenga un array inicializado para este usuario
         if (!userQueues.has(userId)) {
