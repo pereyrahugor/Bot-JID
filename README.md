@@ -4,19 +4,13 @@
   <img src="https://builderbot.vercel.app/assets/thumbnail-vector.png" height="80">
 </p>
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/6VbbLI?referralCode=jyd_0y)
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/pleasant-simplicity?referralCode=yO-oOz)
 
 This project creates a WhatsApp bot that integrates with an AI assistant using BuilderBot technology. It allows for automated conversations and intelligent responses powered by OpenAI's assistant API.
 
 ## Features
 
-- Automated conversation flows for WhatsApp
-- Integration with OpenAI's assistant API
-- Agnostic to WhatsApp provider
-- Automated responses to frequently asked questions
-- Real-time message receiving and responding
-- Interaction tracking with customers
-- Expandable functionality through triggers
+- Receives the command `#LISTAR_GRUPOS#` and returns the list of WhatsApp groups (name and JID) that the line belongs to
 
 ## Getting Started
 
@@ -28,7 +22,6 @@ This project creates a WhatsApp bot that integrates with an AI assistant using B
 3. Set up your environment variables in a `.env` file:
    ```
    PORT=3008
-   ASSISTANT_ID=your_openai_assistant_id
    ```
 4. Run the development server:
    ```
@@ -73,7 +66,6 @@ For questions and support, join our [Discord community](https://link.codigoencas
 ---
 
 Built with [BuilderBot](https://www.builderbot.app/en) - Empowering conversational AI for WhatsApp
-
 
 ## Custom
 

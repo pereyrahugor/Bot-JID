@@ -1,0 +1,13 @@
+{
+  "name": "Bot WhatsApp BuilderBot",
+  "description": "Bot de WhatsApp con integración OpenAI, multiagente y soporte de comandos",
+  "plugins": ["docker"],
+  "envs": [
+    {
+      "key": "PORT",
+      "name": "Puerto de escucha",
+      "required": false,
+      "defaultValue": "3000"
+    }
+  ]
+}
