@@ -1,7 +1,7 @@
 # WhatsApp AI Assistant Bot (BuilderBot.app)
 
 <p align="center">
-  <img src="https://builderbot.vercel.app/assets/thumbnail-vector.png" height="80">
+  <img src="assets/logo.jpg" height="80">
 </p>
 
 [![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/capable-celebration?referralCode=yO-oOz)
