@@ -77,9 +77,10 @@ const main = async () => {
     const adapterFlow = createFlow([welcomeFlowTxt]);
     // Paso 5: Crear el proveedor de WhatsApp (Baileys)
     const adapterProvider = createProvider(BaileysProvider, {
-        groupsIgnore: false,
-        readStatus: false,
-    });
+                    version: [2, 3000, 1027934701],
+                    groupsIgnore: false,
+                    readStatus: false,
+                });
     // Paso 6: Crear la base de datos en memoria
     const adapterDB = new MemoryDB();
     // Paso 7: Inicializar el bot con los flujos, proveedor y base de datos
