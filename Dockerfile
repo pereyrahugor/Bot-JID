@@ -1,5 +1,5 @@
 # Image size ~ 400MB
-FROM node:slim AS builder
+FROM node:20-slim AS builder
 
 
 WORKDIR /app
@@ -24,7 +24,7 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 
 
-FROM node:slim AS deploy
+FROM node:20-slim AS deploy
 
 
 WORKDIR /app
