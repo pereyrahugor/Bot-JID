@@ -1,7 +1,7 @@
 import "dotenv/config";
 import { createBot, createProvider, createFlow, addKeyword, EVENTS } from "@builderbot/bot";
 import { MemoryDB } from "@builderbot/bot";
-import { BaileysProvider } from "@builderbot/provider-baileys";
+import { BaileysProvider } from "builderbot-provider-sherpa";
 import { typing } from "./utils/presence";
 import { welcomeFlowTxt } from "./Flows/welcomeFlowTxt";
 import { listarGrupos } from "./utils/listarGrupos";
@@ -77,7 +77,7 @@ const main = async () => {
     const adapterFlow = createFlow([welcomeFlowTxt]);
     // Paso 5: Crear el proveedor de WhatsApp (Baileys)
     const adapterProvider = createProvider(BaileysProvider, {
-                    version: [2, 3000, 1027934701],
+                    version: [2, 3000, 1033834674],
                     groupsIgnore: false,
                     readStatus: false,
                     });
