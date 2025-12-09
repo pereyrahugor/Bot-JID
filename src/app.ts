@@ -77,7 +77,7 @@ const main = async () => {
     const adapterFlow = createFlow([welcomeFlowTxt]);
     // Paso 5: Crear el proveedor de WhatsApp (Baileys)
     const adapterProvider = createProvider(BaileysProvider, {
-                    version: [2, 3000, 1033834674],
+                    version: [2, 3000, 1030817285],
                     groupsIgnore: false,
                     readStatus: false,
                     });
